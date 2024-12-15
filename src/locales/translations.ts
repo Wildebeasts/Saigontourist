@@ -740,52 +740,52 @@ export const translations = {
     },
     footer: {
       companyInfo: {
-        description: 'Saigontourist Travel, Vietnam\'s leading travel brand',
-        brandTitle: 'National Brand',
+        description: 'Saigontourist Travel, thương hiệu du lịch hàng đầu Việt Nam',
+        brandTitle: 'Thương Hiệu Quốc Gia',
         contact: {
           hotline: 'Hotline: 1900 1808',
           email: 'Email: info@saigontourist.net'
         }
       },
       services: {
-        title: 'SERVICES',
+        title: 'DỊCH VỤ',
         items: {
-          domesticTours: 'Domestic Tours',
-          internationalTours: 'International Tours',
-          travelServices: 'Travel Services',
-          flights: 'Flight Tickets',
-          carRental: 'Car Rental',
-          study: 'Study Abroad with Saigontourist',
-          jobs: 'Overseas Jobs'
+          domesticTours: 'Tour Trong Nước',
+          internationalTours: 'Tour Nước Ngoài',
+          travelServices: 'Dịch Vụ Du Lịch',
+          flights: 'Vé Máy Bay',
+          carRental: 'Thuê Xe',
+          study: 'Du Học Với Saigontourist',
+          jobs: 'Việc Làm Nước Ngoài'
         }
       },
       customerCare: {
-        title: 'CUSTOMER CARE',
+        title: 'CHĂM SÓC KHÁCH HÀNG',
         items: {
-          memberCard: 'Member Card',
-          points: 'Golden Plum Points Exchange',
-          voucher: 'Travel Voucher',
-          insurance: 'Travel Insurance',
-          feedback: 'Customer Feedback',
-          groupInfo: 'Group Information Lookup',
-          complaints: 'Complaint Resolution'
+          memberCard: 'Thẻ Thành Viên',
+          points: 'Đổi Điểm Mận Vàng',
+          voucher: 'Voucher Du Lịch',
+          insurance: 'Bảo Hiểm Du Lịch',
+          feedback: 'Ý Kiến Khách Hàng',
+          groupInfo: 'Tra Cứu Thông Tin Đoàn',
+          complaints: 'Giải Quyết Khiếu Nại'
         }
       },
       contact: {
-        title: 'CONTACT',
+        title: 'LIÊN HỆ',
         items: {
-          about: 'About Us',
-          contact: 'Contact',
-          branches: 'Branches',
-          privacy: 'Privacy Policy',
-          terms: 'Terms & Conditions',
-          bookingGuide: 'Online Booking Guide',
-          payment: 'Payment Policy'
+          about: 'Về Chúng Tôi',
+          contact: 'Liên Hệ',
+          branches: 'Chi Nhánh',
+          privacy: 'Chính Sách Bảo Mật',
+          terms: 'Điều Khoản & Điều Kiện',
+          bookingGuide: 'Hướng Dẫn Đặt Tour Online',
+          payment: 'Chính Sách Thanh Toán'
         }
       },
       copyright: {
-        text: 'Copyright 2006 - 2024 © Saigontourist Travel Service Company Limited.',
-        address: '45 Le Thanh Ton, District 1, Ho Chi Minh City',
+        text: 'Bản quyền 2006 - 2024 © Công ty TNHH Dịch vụ Lữ hành Saigontourist.',
+        address: '45 Lê Thánh Tôn, Quận 1, TP. Hồ Chí Minh',
         phone: 'Tel: (84-28) 38 279 279 - Fax: (84-28) 38 224 987'
       }
     }

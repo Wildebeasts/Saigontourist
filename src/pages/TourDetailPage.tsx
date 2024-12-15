@@ -34,23 +34,23 @@ const TourDetailPage = (): JSX.Element => {
       <div className="relative h-[500px]">
         <img
           src={tour.image}
-          alt={t(`tours.domestic.${getTourIdentifier(tour.id)}.name`)}
+          alt={t(`tours.domestic.${getTourIdentifier(tour.id)}.name`) as string}
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
         <div className="absolute bottom-0 left-0 right-0 p-12">
           <div className="container mx-auto">
             <h1 className="text-4xl font-bold text-white mb-4">
-              {t(`tours.domestic.${getTourIdentifier(tour.id)}.name`)}
+              {t(`tours.domestic.${getTourIdentifier(tour.id)}.name`) as string}
             </h1>
             <div className="flex items-center text-white space-x-6">
               <span className="flex items-center backdrop-blur-sm bg-white/10 px-4 py-2 rounded-full">
                 <i className="far fa-clock mr-2"></i>
-                {t('tour.detail.duration')}: {t(`tours.domestic.${getTourIdentifier(tour.id)}.duration`)}
+                {t('tour.detail.duration') as string}: {t(`tours.domestic.${getTourIdentifier(tour.id)}.duration`) as string}
               </span>
               <span className="flex items-center backdrop-blur-sm bg-white/10 px-4 py-2 rounded-full">
                 <i className="far fa-map-marker-alt mr-2"></i>
-                {t(`tours.domestic.${getTourIdentifier(tour.id)}.location`)}
+                {t(`tours.domestic.${getTourIdentifier(tour.id)}.location`) as string}
               </span>
             </div>
           </div>
@@ -65,31 +65,31 @@ const TourDetailPage = (): JSX.Element => {
             {/* Tour Overview */}
             <div className="bg-white rounded-xl shadow-lg p-8 mb-8">
               <h2 className="text-2xl font-bold mb-6 text-gray-800">
-                {t('tour.detail.overview')}
+                {t('tour.detail.overview') as string}
               </h2>
               <div className="grid grid-cols-2 gap-6">
                 <div className="space-y-4">
                   <p className="flex items-center text-gray-700 bg-gray-50 p-4 rounded-lg">
                     <i className="far fa-clock text-blue-500 mr-3 w-6"></i>
-                    <span className="font-medium mr-2">{t('tour.detail.duration')}:</span>
-                    {t(`tours.domestic.${getTourIdentifier(tour.id)}.duration`)}
+                    <span className="font-medium mr-2">{t('tour.detail.duration') as string}:</span>
+                    {t(`tours.domestic.${getTourIdentifier(tour.id)}.duration`) as string}
                   </p>
                   <p className="flex items-center text-gray-700 bg-gray-50 p-4 rounded-lg">
                     <i className="far fa-plane-departure text-blue-500 mr-3 w-6"></i>
-                    <span className="font-medium mr-2">{t('tour.detail.departure')}:</span>
-                    {t(`tours.domestic.${getTourIdentifier(tour.id)}.location`)}
+                    <span className="font-medium mr-2">{t('tour.detail.departure') as string}:</span>
+                    {t(`tours.domestic.${getTourIdentifier(tour.id)}.location`) as string}
                   </p>
                 </div>
                 <div className="space-y-4">
                   <p className="flex items-center text-gray-700 bg-gray-50 p-4 rounded-lg">
                     <i className="far fa-car text-blue-500 mr-3 w-6"></i>
-                    <span className="font-medium mr-2">{t('tour.detail.transport')}:</span>
-                    {t(`tours.domestic.${getTourIdentifier(tour.id)}.transport`)}
+                    <span className="font-medium mr-2">{t('tour.detail.transport') as string}:</span>
+                    {t(`tours.domestic.${getTourIdentifier(tour.id)}.transport`) as string}
                   </p>
                   <p className="flex items-center text-gray-700 bg-gray-50 p-4 rounded-lg">
                     <i className="far fa-map-marker-alt text-blue-500 mr-3 w-6"></i>
-                    <span className="font-medium mr-2">{t('tour.detail.destination')}:</span>
-                    {t(`tours.domestic.${getTourIdentifier(tour.id)}.location`)}
+                    <span className="font-medium mr-2">{t('tour.detail.destination') as string}:</span>
+                    {t(`tours.domestic.${getTourIdentifier(tour.id)}.location`) as string}
                   </p>
                 </div>
               </div>
@@ -98,17 +98,17 @@ const TourDetailPage = (): JSX.Element => {
             {/* Available Dates */}
             <div className="bg-white rounded-lg shadow-sm p-6 mb-6">
               <h2 className="text-2xl font-bold mb-4">
-                {t('tour.schedule.title')}
+                {t('tour.schedule.title') as string}
               </h2>
               <div className="overflow-x-auto">
                 <table className="w-full">
                   <thead>
                     <tr className="bg-gray-50">
-                      <th className="px-4 py-2 text-left">{t('tour.schedule.departure')}</th>
-                      <th className="px-4 py-2 text-left">{t('tour.schedule.tourCode')}</th>
-                      <th className="px-4 py-2 text-right">{t('tour.schedule.price')}</th>
-                      <th className="px-4 py-2 text-right">{t('tour.schedule.childPrice')}</th>
-                      <th className="px-4 py-2 text-right">{t('tour.schedule.infantPrice')}</th>
+                      <th className="px-4 py-2 text-left">{t('tour.schedule.departure') as string}</th>
+                      <th className="px-4 py-2 text-left">{t('tour.schedule.tourCode') as string}</th>
+                      <th className="px-4 py-2 text-right">{t('tour.schedule.price') as string}</th>
+                      <th className="px-4 py-2 text-right">{t('tour.schedule.childPrice') as string}</th>
+                      <th className="px-4 py-2 text-right">{t('tour.schedule.infantPrice') as string}</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -129,13 +129,15 @@ const TourDetailPage = (): JSX.Element => {
             {/* Highlights */}
             <div className="bg-white rounded-lg shadow-sm p-6 mb-6">
               <h2 className="text-2xl font-bold mb-4">
-                {t('tour.detail.highlights')}
+                {t('tour.detail.highlights') as string}
               </h2>
               <ul className="list-disc list-inside space-y-2 text-gray-600">
-                {(t(`tours.domestic.${getTourIdentifier(tour.id)}.highlights`, { 
+                {/* eslint-disable-next-line @typescript-eslint/ban-ts-comment */}
+                {/* @ts-expect-error */}
+                {(t(`tours.domestic.${getTourIdentifier(tour.id)}.highlights.items`, { 
                   returnObjects: true,
-                  defaultValue: { items: [] }
-                }).items || []).map((highlight, index) => (
+                  defaultValue: []
+                }) as string[]).map((highlight, index) => (
                   <li key={index}>{highlight}</li>
                 ))}
               </ul>
@@ -152,7 +154,7 @@ const TourDetailPage = (): JSX.Element => {
                     )}
                     onClick={() => setActiveTab('itinerary')}
                   >
-                    {t('tour.tabs.itinerary')}
+                    {t('tour.tabs.itinerary') as string}
                   </button>
                   <button
                     className={cn(
@@ -161,7 +163,7 @@ const TourDetailPage = (): JSX.Element => {
                     )}
                     onClick={() => setActiveTab('policies')}
                   >
-                    {t('tour.tabs.policies')}
+                    {t('tour.tabs.policies') as string}
                   </button>
                   <button
                     className={cn(
@@ -170,7 +172,7 @@ const TourDetailPage = (): JSX.Element => {
                     )}
                     onClick={() => setActiveTab('visa')}
                   >
-                    {t('tour.tabs.visa')}
+                    {t('tour.tabs.visa') as string}
                   </button>
                 </div>
               </div>
@@ -178,18 +180,20 @@ const TourDetailPage = (): JSX.Element => {
               <div className="p-6">
                 {activeTab === 'itinerary' && (
                   <div className="space-y-8">
+                    {/* eslint-disable-next-line @typescript-eslint/ban-ts-comment */}
+                    {/* @ts-expect-error */}
                     {Object.keys(t(`tours.domestic.${getTourIdentifier(tour.id)}.itinerary`, { returnObjects: true })).map((day, index) => (
                       <div key={index} className="bg-gray-50 rounded-xl p-6">
                         <h3 className="text-xl font-bold mb-4 text-blue-800">
-                          {t(`tours.domestic.${getTourIdentifier(tour.id)}.itinerary.${day}.title`)}
+                          {t(`tours.domestic.${getTourIdentifier(tour.id)}.itinerary.${day}.title`) as string}
                         </h3>
                         <div className="flex items-center mb-4 text-gray-600">
                           <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">
-                            {t(`tours.domestic.${getTourIdentifier(tour.id)}.itinerary.${day}.meals`)}
+                            {t(`tours.domestic.${getTourIdentifier(tour.id)}.itinerary.${day}.meals`) as string}
                           </span>
                         </div>
                         <p className="text-gray-700 leading-relaxed">
-                          {t(`tours.domestic.${getTourIdentifier(tour.id)}.itinerary.${day}.description`)}
+                          {t(`tours.domestic.${getTourIdentifier(tour.id)}.itinerary.${day}.description`) as string}
                         </p>
                       </div>
                     ))}
@@ -199,9 +203,11 @@ const TourDetailPage = (): JSX.Element => {
                 {activeTab === 'policies' && (
                   <div>
                     <h3 className="text-xl font-bold mb-4">
-                      {t(`tours.domestic.${getTourIdentifier(tour.id)}.policies.title`)}
+                      {t(`tours.domestic.${getTourIdentifier(tour.id)}.policies.title`) as string}
                     </h3>
                     <ul className="list-disc list-inside space-y-2 text-gray-600">
+                      {/* eslint-disable-next-line @typescript-eslint/ban-ts-comment */}
+                      {/* @ts-expect-error */}
                       {(t(`tours.domestic.${getTourIdentifier(tour.id)}.policies.items`, {
                         returnObjects: true,
                         defaultValue: []
@@ -214,6 +220,8 @@ const TourDetailPage = (): JSX.Element => {
 
                 {activeTab === 'visa' && (
                   <ul className="list-disc list-inside space-y-2 text-gray-600">
+                    {/* eslint-disable-next-line @typescript-eslint/ban-ts-comment */}
+                    {/* @ts-expect-error */}
                     {(t(`tours.domestic.${getTourIdentifier(tour.id)}.visaInfo.items`, {
                       returnObjects: true,
                       defaultValue: []
@@ -230,14 +238,14 @@ const TourDetailPage = (): JSX.Element => {
           <div className="lg:col-span-1">
             <div className="bg-white rounded-xl shadow-lg p-8 sticky top-24">
               <div className="text-center mb-8">
-                <p className="text-gray-600 mb-2">{t('tour.detail.priceFrom')}</p>
+                <p className="text-gray-600 mb-2">{t('tour.detail.priceFrom') as string}</p>
                 <p className="text-4xl font-bold text-orange-500">{tour.price}</p>
               </div>
               <button className="w-full bg-orange-500 text-white py-4 rounded-lg hover:bg-orange-600 transition-all transform hover:scale-105 font-medium mb-4">
-                {t('tour.detail.bookNow')}
+                {t('tour.detail.bookNow') as string}
               </button>
               <button className="w-full border-2 border-orange-500 text-orange-500 py-4 rounded-lg hover:bg-orange-50 transition-all font-medium">
-                {t('tour.detail.contact')}
+                {t('tour.detail.contact') as string}
               </button>
             </div>
           </div>
