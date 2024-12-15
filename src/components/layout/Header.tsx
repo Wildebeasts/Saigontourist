@@ -5,6 +5,8 @@ import { Search } from "lucide-react"
 import logo from "../../assets/logo.png"
 import logoAlt from "../../assets/logo-color-big.png"
 import { Link } from 'react-router-dom'
+import { useTranslation } from '../../hooks/useTranslation';
+import { LanguageSwitcher } from '../LanguageSwitcher'
 
 // Add darkBg prop
 interface HeaderProps {
@@ -13,6 +15,7 @@ interface HeaderProps {
 
 export const Header = ({ darkBg = false }: HeaderProps) => {
   const [isScrolled, setIsScrolled] = useState(false)
+  const { t } = useTranslation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -38,28 +41,25 @@ export const Header = ({ darkBg = false }: HeaderProps) => {
       >
         <div className="container mx-auto px-4 flex justify-between items-center">
           <div className="flex items-center space-x-6 text-sm">
-            <a href="mailto:info@saigontourist.net" className="flex items-center hover:text-gray-200">
+            <a href={`mailto:${t('header.email')}`} className="flex items-center hover:text-gray-200">
               <i className="fa fa-envelope mr-2"></i>
-              info@saigontourist.net
+              {t('header.email') as string}: info@saigontourist.net
             </a>
             <a href="tel:1900 1808" className="flex items-center hover:text-gray-200">
               <i className="fa fa-phone mr-2"></i>
-              Hotline: 1900 1808
+              {t('header.hotline') as string}: 1900 1808
             </a>
           </div>
           <div className="flex items-center space-x-6 text-sm">
             <a href="#" className="flex items-center hover:text-gray-200">
               <i className="fa fa-map-marker mr-2"></i>
-              Chọn điểm khởi hành
+              {t('header.selectLocation') as string}
             </a>
             <a href="/login" className="flex items-center hover:text-gray-200">
               <i className="fa fa-sign-in mr-2"></i>
-              Đăng nhập
+              {t('header.login') as string}
             </a>
-            <a href="#" className="flex items-center hover:text-gray-200">
-              <img src="/images/flag-english.png" alt="English" className="w-5 h-5 mr-2" />
-              English
-            </a>
+            <LanguageSwitcher />
           </div>
         </div>
       </div>
@@ -106,7 +106,7 @@ export const Header = ({ darkBg = false }: HeaderProps) => {
                     : "text-gray-800 hover:text-primary-600"
               )}
             >
-              TRANG CHỦ
+              {t('nav.home') as string}
             </Link>
             <Link 
               to="/tour-trong-nuoc" 
@@ -119,7 +119,7 @@ export const Header = ({ darkBg = false }: HeaderProps) => {
                     : "text-gray-800 hover:text-primary-600"
               )}
             >
-              TOUR TRONG NƯỚC
+              {t('nav.domesticTours') as string}
             </Link>
             <Link 
               to="/gioi-thieu" 
@@ -132,7 +132,7 @@ export const Header = ({ darkBg = false }: HeaderProps) => {
                     : "text-gray-800 hover:text-primary-600"
               )}
             >
-              GIỚI THIỆU
+              {t('nav.about') as string}
             </Link>
           </div>
 

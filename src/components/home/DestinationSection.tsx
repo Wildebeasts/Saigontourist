@@ -3,31 +3,33 @@ import danangImage from "../../assets/Hai-Van-Da-Nang_270841277.jpg"
 import hochiminhImage from "../../assets/Complex-of-Hue-Monuments.jpg"
 import danangImage2 from "../../assets/Burj-Al-Arab_174741755.jpg"
 import danangImage3 from "../../assets/city-view-vung-tau.jpg"
+import { useTranslation } from '../../hooks/useTranslation';
 
 export const DestinationSection = () => {
+  const { t } = useTranslation();
+  
   return (
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="mb-8">
           <h2 className="text-2xl font-bold uppercase">
-            ĐIỂM ĐẾN & TRẢI NGHIỆM
+            {t('home.destinations.title') as string}
           </h2>
           <div className="w-20 h-1 bg-blue-600 mt-2"></div>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
-          {/* Featured Destination */}
           <div className="lg:col-span-4">
             <div className="relative h-[400px] rounded-lg overflow-hidden group">
               <img
                 src={danangImage3}
-                alt="Vung Tau City View"
+                alt={t('home.destinations.vungTau.title') as string}
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent">
                 <div className="absolute bottom-0 p-6 text-white">
-                  <h3 className="text-2xl font-bold mb-2">Vũng Tàu</h3>
-                  <p>Thành phố biển năng động</p>
+                  <h3 className="text-2xl font-bold mb-2">{t('home.destinations.vungTau.title') as string}</h3>
+                  <p>{t('home.destinations.vungTau.desc') as string}</p>
                 </div>
               </div>
             </div>
@@ -38,23 +40,23 @@ export const DestinationSection = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
                 {
-                  name: "Đà Nẵng",
-                  description: "Thành phố đáng sống",
+                  name: t('home.destinations.danang.title') as string,
+                  description: t('home.destinations.danang.desc') as string,
                   image: danangImage
                 },
                 {
-                  name: "Hồ Chí Minh",
-                  description: "Thành phố năng động",
+                  name: t('home.destinations.hochiminh.title') as string,
+                  description: t('home.destinations.hochiminh.desc') as string,
                   image: hochiminhImage
                 },
                 {
-                  name: "Vũng Tàu",
-                  description: "Thiên đường biển",
+                  name: t('home.destinations.vungTau.title') as string,
+                  description: t('home.destinations.vungTau.desc') as string,
                   image: vungTauImage
                 },
                 {
-                  name: "Đà Nẵng",
-                  description: "Cảnh đẹp về đêm",
+                  name: t('home.destinations.danangNight.title') as string,
+                  description: t('home.destinations.danangNight.desc') as string,
                   image: danangImage2
                 }
               ].map((destination, index) => (

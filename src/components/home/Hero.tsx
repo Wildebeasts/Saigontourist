@@ -1,31 +1,36 @@
 import { useState, useEffect } from 'react'
 import dubai from '../../assets/Burj-Al-Arab_174741755.jpg'
 import indonesia from '../../assets/Indo_Bali_Lembongan_785773840.jpg'
+import { useTranslation } from '../../hooks/useTranslation'
 
-const slides = [
-  {
-    image: indonesia,
-    title: "SIÊU KHUYẾN MÃI",
-    subtitle: "DU LỊCH INDONESIA",
-    discount: "Giảm 1.000.000đ/khách"
-  },
-  {
-    image: dubai,
-    title: "TẾT NGUYÊN ĐÁN 2025",
-    subtitle: "DU LỊCH THỔ NHĨ KỲ",
-    discount: "Giảm 3.000.000đ/khách"
-  },
-  // Add more slides as needed
-]
+
 
 export const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0)
+  const { t } = useTranslation()
+
+  const slides = [
+    {
+      image: indonesia,
+      title: 'home.hero.indonesia.title',
+      subtitle: 'home.hero.indonesia.subtitle',
+      discount: 'home.hero.indonesia.discount'
+    },
+    {
+      image: dubai,
+      title: 'home.hero.tet2025.title',
+      subtitle: 'home.hero.tet2025.subtitle',
+      discount: 'home.hero.tet2025.discount'
+    },
+    // Add more slides as needed
+  ]
 
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length)
     }, 5000)
     return () => clearInterval(timer)
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   return (
@@ -63,14 +68,14 @@ export const Hero = () => {
             >
               <div className="absolute inset-0 bg-black bg-opacity-30" />
               <div className="absolute inset-0 flex flex-col items-center justify-center text-white">
-                <h1 className="text-5xl font-bold mb-4">{slide.title}</h1>
-                <h2 className="text-4xl font-semibold mb-6">{slide.subtitle}</h2>
-                <p className="text-2xl mb-8">{slide.discount}</p>
+                <h1 className="text-5xl font-bold mb-4">{t(slide.title) as string}</h1>
+                <h2 className="text-4xl font-semibold mb-6">{t(slide.subtitle) as string}</h2>
+                <p className="text-2xl mb-8">{t(slide.discount) as string}</p>
                 <a
                   href="#"
                   className="px-6 py-3 bg-orange-500 text-white rounded hover:bg-orange-600 transition-colors"
                 >
-                  XEM THÊM
+                  {t('home.hero.viewMore') as string}
                 </a>
               </div>
             </div>
@@ -97,7 +102,7 @@ export const Hero = () => {
           <div className="relative bg-white rounded-xl shadow-lg flex items-center">
             <input
               type="text"
-              placeholder="Tìm kiếm..."
+              placeholder={t('home.hero.search') as string}
               className="w-full py-4 px-8 rounded-full text-lg focus:outline-none"
             />
             <button className="absolute right-2 p-3 hover:bg-gray-100 rounded-full transition-colors">

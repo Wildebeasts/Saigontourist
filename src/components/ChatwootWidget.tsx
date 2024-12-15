@@ -6,7 +6,7 @@ const ChatwootWidget = () => {
     window.chatwootSettings = {
       hideMessageBubble: false,
       position: "right",
-      locale: "vi",
+      locale: "en",
       type: "expanded_bubble",
       launcherTitle: "Chat",
     };
@@ -25,7 +25,6 @@ const ChatwootWidget = () => {
           window.chatwootSDK.run({
             websiteToken: 'VEZM9exBfLD63BSdYH394cJY',
             baseUrl: BASE_URL,
-            locale: 'vi_VN'
           })
         }
       })(document,"script");
