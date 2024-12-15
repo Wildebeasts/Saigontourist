@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import { domesticTours } from "../data/tours"
 import { Link } from "react-router-dom";
 import bg from "../assets/chua-huong-ha-tay-hanoi1.jpg"
@@ -9,12 +10,21 @@ import { useTranslation } from '../hooks/useTranslation';
 
 const DomesticToursPage = (): JSX.Element => {
   const { t } = useTranslation();
-  const [searchTerm, setSearchTerm] = useState('');
+  const [searchParams] = useSearchParams();
+  const [searchTerm, setSearchTerm] = useState(searchParams.get('search') || '');
   const [displayedSearchTerm, setDisplayedSearchTerm] = useState('');
   const [startDate, setStartDate] = useState<Date | null>(null);
   const [endDate, setEndDate] = useState<Date | null>(null);
   const [filteredTours, setFilteredTours] = useState<DomesticTour[]>(domesticTours);
   const [hasSearched, setHasSearched] = useState(false);
+
+  useEffect(() => {
+    const searchFromUrl = searchParams.get('search');
+    if (searchFromUrl) {
+      setSearchTerm(searchFromUrl);
+      handleSearch();
+    }
+  }, []);
 
   const handleSearch = () => {
     setHasSearched(true);

@@ -2,12 +2,15 @@ import { useState, useEffect } from 'react'
 import dubai from '../../assets/Burj-Al-Arab_174741755.jpg'
 import indonesia from '../../assets/Indo_Bali_Lembongan_785773840.jpg'
 import { useTranslation } from '../../hooks/useTranslation'
+import { useNavigate } from 'react-router-dom'
 
 
 
 export const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0)
   const { t } = useTranslation()
+  const navigate = useNavigate()
+  const [searchTerm, setSearchTerm] = useState('')
 
   const slides = [
     {
@@ -32,6 +35,10 @@ export const Hero = () => {
     return () => clearInterval(timer)
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
+
+  const handleSearch = () => {
+    navigate(`/tour-trong-nuoc?search=${encodeURIComponent(searchTerm)}`)
+  }
 
   return (
     <div className="relative w-full">
@@ -102,10 +109,20 @@ export const Hero = () => {
           <div className="relative bg-white rounded-xl shadow-lg flex items-center">
             <input
               type="text"
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
               placeholder={t('home.hero.search') as string}
               className="w-full py-4 px-8 rounded-full text-lg focus:outline-none"
+              onKeyPress={(e) => {
+                if (e.key === 'Enter') {
+                  handleSearch()
+                }
+              }}
             />
-            <button className="absolute right-2 p-3 hover:bg-gray-100 rounded-full transition-colors">
+            <button 
+              onClick={handleSearch}
+              className="absolute right-2 p-3 hover:bg-gray-100 rounded-full transition-colors"
+            >
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6 text-gray-600">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
               </svg>

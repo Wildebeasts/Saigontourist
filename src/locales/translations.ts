@@ -322,6 +322,23 @@ export const translations = {
               "Hủy tour trước 5 ngày: Phí hủy 50% giá tour",
               "Hủy tour trong vòng 5 ngày: Phí hủy 100% giá tour"
             ]
+          },
+          policies: {
+            title: "Chính sách tour",
+            items: [
+              "Xe tham quan (xe 16 chỗ, 29 chỗ, 35 chỗ, 45 chỗ) tùy theo số lượng khách thực tế trên chuyến đi",
+              "Khách sạn tiêu chuẩn đầy đủ tiện nghi 2 khách/phòng. Lẻ khách ngủ ghép 3",
+              "Ăn uống theo chương trình",
+              "Vé tham quan theo chương trình",
+              "Hướng dẫn viên phục vụ suốt tuyến",
+              "Bảo hiểm du lịch với mức bồi thường cao nhất 120.000.000đ/vụ"
+            ]
+          },
+          visaInfo: {
+            items: [
+              "Khách mang theo CMND/CCCD bản chính còn hạn sử dụng",
+              "Trẻ em dưới 14 tuổi mang theo giấy khai sinh bản chính"
+            ]
           }
         },
         buonMaThuot: {
@@ -364,6 +381,20 @@ export const translations = {
               meals: "Ăn sáng + trưa",
               description: "Tự do tham quan, nghỉ ngơi tại resort. Trưa khởi hành về TP. HỒ CHÍ MINH. Kết thúc chương trình tour."
             }
+          },
+          policies: {
+            title: "Chính sách tour",
+            items: [
+              "Giá tour bao gồm vé tham quan theo chương trình",
+              "Bảo hiểm du lịch mức đền bù tối đa 20.000.000đ/người/vụ",
+              "Không bao gồm chi phí cá nhân và tiền tip cho hướng dẫn viên"
+            ]
+          },
+          visaInfo: {
+            items: [
+              "Khách mang theo CMND/CCCD bản chính còn hạn sử dụng",
+              "Trẻ em dưới 14 tuổi mang theo giấy khai sinh bản chính"
+            ]
           }
         },
         danang: {
@@ -406,6 +437,21 @@ export const translations = {
               meals: "Ăn sáng + trưa",
               description: "Tham quan chợ Đông Ba, mua sắm đặc sản Huế. Ra sân bay Phú Bài, bay về TP. HỒ CHÍ MINH. Kết thúc chương trình tour."
             }
+          },
+          policies: {
+            title: "Chính sách tour",
+            items: [
+              "Vé máy bay khứ hồi Vietnam Airlines",
+              "Khách sạn 4 sao theo tiêu chuẩn 2 người/phòng",
+              "Vé tham quan và hướng dẫn viên suốt tuyến",
+              "Bảo hiểm du lịch mức đền bù tối đa 120.000.000đ/vụ"
+            ]
+          },
+          visaInfo: {
+            items: [
+              "Khách mang theo CMND/CCCD bản chính còn hạn sử dụng",
+              "Trẻ em dưới 14 tuổi mang theo giấy khai sinh bản chính"
+            ]
           }
         },
         hanoi: {
@@ -448,6 +494,22 @@ export const translations = {
               meals: "Ăn sáng + trưa",
               description: "Tham quan chợ Hạ Long, mua sắm đặc sản. Về Hà Nội, ghé làng gốm Bát Tràng. Ra sân bay Nội Bài, bay về TP. HỒ CHÍ MINH. Kết thúc chương trình tour."
             }
+          },
+          policies: {
+            title: "Chính sách tour",
+            items: [
+              "Vé máy bay khứ hồi Vietnam Airlines",
+              "Khách sạn 4 sao tại trung tâm các thành phố",
+              "Xe đưa đón và tham quan theo chương trình",
+              "Vé cáp treo Fansipan và các điểm tham quan",
+              "Bảo hiểm du lịch mức đền bù tối đa 120.000.000đ/vụ"
+            ]
+          },
+          visaInfo: {
+            items: [
+              "Khách mang theo CMND/CCCD bản chính còn hạn sử dụng",
+              "Trẻ em dưới 14 tuổi mang theo giấy khai sinh bản chính"
+            ]
           }
         },
         vungTau: {
@@ -475,10 +537,26 @@ export const translations = {
               meals: "Ăn sáng + trưa",
               description: "Tham quan chợ Vũng Tàu, mua đặc sản. Di chuyển về Cần Giờ, tham quan Khu dự trữ sinh quyển Rừng ngập mặn Cần Giờ. Về đến TP. HỒ CHÍ MINH, kết thúc chương trình tour."
             }
+          },
+          policies: {
+            title: "Chính sách tour",
+            items: [
+              "Xe đưa đón và tham quan theo chương trình",
+              "Khách sạn 3 sao tại trung tâm thành phố",
+              "Ăn uống theo chương trình",
+              "Vé tham quan các điểm trong chương trình",
+              "Bảo hiểm du lịch mức đền bù tối đa 20.000.000đ/vụ"
+            ]
+          },
+          visaInfo: {
+            items: [
+              "Khách mang theo CMND/CCCD bản chính còn hạn sử dụng",
+              "Trẻ em dưới 14 tuổi mang theo giấy khai sinh bản chính"
+            ]
           }
         },
         binhChau: {
-          name: "Du lịch nghỉ dưỡng t���i Minera Hot Spring Bình Châu",
+          name: "Du lịch nghỉ dưỡng ti Minera Hot Spring Bình Châu",
           description: "Khởi hành Chủ nhật cách tuần - Tham quan suối khoáng nóng Bình Châu",
           location: "TP. HỒ CHÍ MINH - HỒ TR��M | VŨNG TÀU",
           transport: "Đi về bằng xe",
@@ -507,6 +585,22 @@ export const translations = {
               meals: "Ăn sáng + trưa",
               description: "Buổi sáng tự do tắm biển hoặc tắm khoáng. Trả phòng. Khởi hành về TP.HCM, ghé chợ Bà Rịa mua đặc sản. Về đến TP.HCM, kết thúc chương trình tour."
             }
+          },
+          policies: {
+            title: "Chính sách tour",
+            items: [
+              "Xe đưa đón và tham quan theo chương trình",
+              "Resort 4 sao Minera Hot Springs Bình Châu",
+              "Miễn phí sử dụng các dịch vụ tại resort",
+              "Ăn uống theo chương trình",
+              "Bảo hiểm du lịch mức đền bù tối đa 20.000.000đ/vụ"
+            ]
+          },
+          visaInfo: {
+            items: [
+              "Khách mang theo CMND/CCCD bản chính còn hạn sử dụng",
+              "Trẻ em dưới 14 tuổi mang theo giấy khai sinh bản chính"
+            ]
           }
         },
         danangHue: {
@@ -544,6 +638,22 @@ export const translations = {
               meals: "Ăn sáng + trưa",
               description: "Tham quan chợ Đông Ba, mua đặc sản. Bay về TP.HCM. Kết thúc chương trình tour."
             }
+          },
+          policies: {
+            title: "Chính sách tour",
+            items: [
+              "Vé máy bay khứ hồi Vietnam Airlines",
+              "Khách sạn 4 sao tiêu chuẩn",
+              "Vé tham quan theo chương trình",
+              "Vé công viên nước Mikazuki 365",
+              "Bảo hiểm du lịch mức đền bù tối đa 120.000.000đ/vụ"
+            ]
+          },
+          visaInfo: {
+            items: [
+              "Khách mang theo CMND/CCCD bản chính còn hạn sử dụng",
+              "Trẻ em dưới 14 tuổi mang theo giấy khai sinh bản chính"
+            ]
           }
         },
         danangPhongNha: {
@@ -586,6 +696,22 @@ export const translations = {
               meals: "Ăn sáng + trưa",
               description: "Tham quan chợ Đông Ba, mua đặc sản. Bay về TP.HCM. Kết thúc chương trình tour."
             }
+          },
+          policies: {
+            title: "Chính sách tour",
+            items: [
+              "Vé máy bay khứ hồi Vietnam Airlines",
+              "Khách sạn 4 sao tiêu chuẩn",
+              "Vé tham quan theo chương trình",
+              "Vé thuyền thăm động Phong Nha",
+              "Bảo hiểm du lịch mức đền bù tối đa 120.000.000đ/vụ"
+            ]
+          },
+          visaInfo: {
+            items: [
+              "Khách mang theo CMND/CCCD bản chính còn hạn sử dụng",
+              "Trẻ em dưới 14 tuổi mang theo giấy khai sinh bản chính"
+            ]
           }
         }
       }
@@ -962,6 +1088,23 @@ export const translations = {
               "Cancel 5 days before: 50% tour price penalty",
               "Cancel within 5 days: 100% tour price penalty"
             ]
+          },
+          policies: {
+            title: "Tour Policies",
+            items: [
+              "Tour vehicle (16-seat, 29-seat, 35-seat, 45-seat) depending on actual number of passengers",
+              "Standard hotel accommodation with 2 guests/room. Odd guests share triple room",
+              "Meals as per program",
+              "Entrance fees as per itinerary",
+              "Tour guide throughout the journey",
+              "Travel insurance with maximum compensation of 120,000,000 VND/case"
+            ]
+          },
+          visaInfo: {
+            items: [
+              "Guests must bring valid original ID card/Citizen card",
+              "Children under 14 must bring original birth certificate"
+            ]
           }
         },
         buonMaThuot: {
@@ -1004,6 +1147,20 @@ export const translations = {
               meals: "Breakfast + Lunch",
               description: "Free morning at resort. Afternoon return to Ho Chi Minh City. End of tour program."
             }
+          },
+          policies: {
+            title: "Tour Policies",
+            items: [
+              "Tour price includes entrance fees as per program",
+              "Travel insurance with maximum compensation of 20,000,000 VND/person/case",
+              "Excludes personal expenses and tips for tour guide"
+            ]
+          },
+          visaInfo: {
+            items: [
+              "Guests must bring valid original ID card/Citizen card",
+              "Children under 14 must bring original birth certificate"
+            ]
           }
         },
         danang: {
@@ -1046,6 +1203,21 @@ export const translations = {
               meals: "Breakfast + Lunch",
               description: "Visit Dong Ba Market, shop for Hue specialties. Transfer to Phu Bai airport, fly back to HO CHI MINH CITY. End of tour."
             }
+          },
+          policies: {
+            title: "Tour Policies",
+            items: [
+              "Round-trip Vietnam Airlines tickets",
+              "4-star hotel accommodation with 2 guests/room",
+              "Entrance fees and tour guide throughout the journey",
+              "Travel insurance with maximum compensation of 120,000,000 VND/case"
+            ]
+          },
+          visaInfo: {
+            items: [
+              "Guests must bring valid original ID card/Citizen card",
+              "Children under 14 must bring original birth certificate"
+            ]
           }
         },
         hanoi: {
@@ -1088,6 +1260,22 @@ export const translations = {
               meals: "Breakfast + Lunch",
               description: "Visit Ha Long Market, shop for specialties. Return to Hanoi, visit Bat Trang pottery village. Transfer to Noi Bai airport, fly back to HO CHI MINH CITY. End of tour."
             }
+          },
+          policies: {
+            title: "Tour Policies",
+            items: [
+              "Round-trip Vietnam Airlines tickets",
+              "4-star hotels in city centers",
+              "Transportation and sightseeing as per program",
+              "Fansipan cable car tickets and entrance fees",
+              "Travel insurance with maximum compensation of 120,000,000 VND/case"
+            ]
+          },
+          visaInfo: {
+            items: [
+              "Guests must bring valid original ID card/Citizen card",
+              "Children under 14 must bring original birth certificate"
+            ]
           }
         },
         vungTau: {
@@ -1115,6 +1303,22 @@ export const translations = {
               meals: "Breakfast + Lunch",
               description: "Visit Vung Tau Market, buy specialties. Move to Can Gio, visit Can Gio Mangrove Biosphere Reserve. Return to HO CHI MINH CITY, end of tour."
             }
+          },
+          policies: {
+            title: "Tour Policies",
+            items: [
+              "Transportation and sightseeing as per program",
+              "3-star hotel in city center",
+              "Meals as per program",
+              "Entrance fees for all attractions in the program",
+              "Travel insurance with maximum compensation of 20,000,000 VND/case"
+            ]
+          },
+          visaInfo: {
+            items: [
+              "Guests must bring valid original ID card/Citizen card",
+              "Children under 14 must bring original birth certificate"
+            ]
           }
         },
         binhChau: {
@@ -1147,6 +1351,22 @@ export const translations = {
               meals: "Breakfast + Lunch",
               description: "Morning free for beach or hot spring bath. Check out. Return to HCMC, stop at Ba Ria market for specialties. Arrive in HCMC, end of tour."
             }
+          },
+          policies: {
+            title: "Tour Policies",
+            items: [
+              "Xe đưa đón và tham quan theo chương trình",
+              "Resort 4 sao Minera Hot Springs Bình Châu",
+              "Miễn phí sử dụng các dịch vụ tại resort",
+              "Ăn uống theo chương trình",
+              "Bảo hiểm du lịch mức đền bù tối đa 20.000.000đ/vụ"
+            ]
+          },
+          visaInfo: {
+            items: [
+              "Khách mang theo CMND/CCCD bản chính còn hạn sử dụng",
+              "Trẻ em dưới 14 tuổi mang theo giấy khai sinh bản chính"
+            ]
           }
         },
         danangHue: {
@@ -1184,6 +1404,22 @@ export const translations = {
               meals: "Breakfast + Lunch",
               description: "Visit Dong Ba Market, buy specialties. Fly back to HCMC. End of tour."
             }
+          },
+          policies: {
+            title: "Tour Policies",
+            items: [
+              "Round-trip Vietnam Airlines tickets",
+              "4-star standard hotels",
+              "Entrance fees as per program",
+              "Mikazuki 365 Water Park tickets",
+              "Travel insurance with maximum compensation of 120,000,000 VND/case"
+            ]
+          },
+          visaInfo: {
+            items: [
+              "Guests must bring valid original ID card/Citizen card",
+              "Children under 14 must bring original birth certificate"
+            ]
           }
         },
         danangPhongNha: {
@@ -1226,6 +1462,22 @@ export const translations = {
               meals: "Breakfast + Lunch",
               description: "Visit Dong Ba Market, buy specialties. Fly back to HCMC. End of tour."
             }
+          },
+          policies: {
+            title: "Tour Policies",
+            items: [
+              "Round-trip Vietnam Airlines tickets",
+              "4-star standard hotels",
+              "Entrance fees as per program",
+              "Boat tickets to Phong Nha Cave",
+              "Travel insurance with maximum compensation of 120,000,000 VND/case"
+            ]
+          },
+          visaInfo: {
+            items: [
+              "Guests must bring valid original ID card/Citizen card",
+              "Children under 14 must bring original birth certificate"
+            ]
           }
         }
       }

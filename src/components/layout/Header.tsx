@@ -4,7 +4,7 @@ import { cn } from "../../lib/utils"
 import { Search } from "lucide-react"
 import logo from "../../assets/logo.png"
 import logoAlt from "../../assets/logo-color-big.png"
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { useTranslation } from '../../hooks/useTranslation';
 import { LanguageSwitcher } from '../LanguageSwitcher'
 
@@ -16,6 +16,7 @@ interface HeaderProps {
 export const Header = ({ darkBg = false }: HeaderProps) => {
   const [isScrolled, setIsScrolled] = useState(false)
   const { t } = useTranslation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -140,6 +141,7 @@ export const Header = ({ darkBg = false }: HeaderProps) => {
           <Button 
             variant="default" 
             size="icon"
+            onClick={() => navigate('/tour-trong-nuoc')}
             className={cn(
               "transition-colors",
               isScrolled 

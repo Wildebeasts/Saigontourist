@@ -197,16 +197,27 @@ const TourDetailPage = (): JSX.Element => {
                 )}
 
                 {activeTab === 'policies' && (
-                  <ul className="list-disc list-inside space-y-2 text-gray-600">
-                    {tour.policies?.map((policy, index) => (
-                      <li key={index}>{policy}</li>
-                    ))}
-                  </ul>
+                  <div>
+                    <h3 className="text-xl font-bold mb-4">
+                      {t(`tours.domestic.${getTourIdentifier(tour.id)}.policies.title`)}
+                    </h3>
+                    <ul className="list-disc list-inside space-y-2 text-gray-600">
+                      {(t(`tours.domestic.${getTourIdentifier(tour.id)}.policies.items`, {
+                        returnObjects: true,
+                        defaultValue: []
+                      }) as string[]).map((policy, index) => (
+                        <li key={index}>{policy}</li>
+                      ))}
+                    </ul>
+                  </div>
                 )}
 
                 {activeTab === 'visa' && (
                   <ul className="list-disc list-inside space-y-2 text-gray-600">
-                    {tour.visaInfo?.map((info, index) => (
+                    {(t(`tours.domestic.${getTourIdentifier(tour.id)}.visaInfo.items`, {
+                      returnObjects: true,
+                      defaultValue: []
+                    }) as string[]).map((info, index) => (
                       <li key={index}>{info}</li>
                     ))}
                   </ul>
