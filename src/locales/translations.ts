@@ -196,16 +196,16 @@ export const translations = {
       videoPage: {
         title: 'Về Chúng Tôi',
         video1: {
-          title: 'Giới thiệu Saigontourist',
-          description: 'Tìm hiểu về lịch sử và sứ mệnh của chúng tôi'
+          title: 'Video 1',
+          description: 'Hành trình trở về với tình yêu'
         },
         video2: {
-          title: 'Dịch vụ của chúng tôi',
-          description: 'Khám phá các dịch vụ du lịch đẳng cấp'
+          title: 'Video 2',
+          description: 'Khám phá lại đam mê của bạn'
         },
         video3: {
-          title: 'Khách hàng nói gì về chúng tôi',
-          description: 'Những trải nghiệm thực tế từ khách hàng'
+          title: 'Video 3',
+          description: 'Năm mới, hành trình mới'
         },
         closing: 'Saigontourist tự hào là đơn vị lữ hành hàng đầu Việt Nam, mang đến những trải nghiệm du lịch độc đáo và dịch vụ chất lượng cao cho khách hàng trong suốt hơn 45 năm qua.'
       }
@@ -1004,16 +1004,16 @@ export const translations = {
       videoPage: {
         title: 'About Us',
         video1: {
-          title: 'About Saigontourist',
-          description: 'Learn about our history and mission'
+          title: 'Video 1',
+          description: 'The Journey back to love'
         },
         video2: {
-          title: 'Our Services',
-          description: 'Discover our high-quality travel offerings'
+          title: 'Video 2',
+          description: 'Rediscover your Passion'
         },
         video3: {
-          title: 'What Our Customers Say',
-          description: 'Real experiences from our customers'
+          title: 'Video 3',
+          description: 'A new year, A new journey'
         },
         closing: 'Saigontourist is proud to be Vietnam\'s leading travel company, providing unique travel experiences and high-quality service for over 45 years.'
       }
