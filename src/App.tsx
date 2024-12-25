@@ -5,6 +5,7 @@ import LandingPage from "./pages/LandingPage"
 import DomesticToursPage from "./pages/DomesticToursPage"
 import AboutPage from "./pages/AboutPage"
 import TourDetailPage from "./pages/TourDetailPage"
+import VideoAboutPage from "./pages/AboutUs"
 import { LanguageProvider } from './contexts/LanguageContext';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
             <Route path="/" element={<LandingPage />} />
             <Route path="/tour-trong-nuoc" element={<DomesticToursPage />} />
             <Route path="/gioi-thieu" element={<AboutPage />} />
+            <Route path="/ve-chung-toi" element={<VideoAboutPage />} />
             <Route path="/tour/:brand/:id" element={<TourDetailPage />} />
           </Routes>
         </main>

@@ -4,6 +4,7 @@ export const translations = {
       home: 'TRANG CHỦ',
       domesticTours: 'TOUR TRONG NƯỚC',
       about: 'GIỚI THIỆU',
+      aboutUs: 'VỀ CHÚNG TÔI',
     },
     header: {
       selectLocation: 'Chọn điểm khởi hành',
@@ -191,6 +192,22 @@ export const translations = {
           number: '1900 1808',
           support: 'Hỗ trợ 24/7'
         }
+      },
+      videoPage: {
+        title: 'Về Chúng Tôi',
+        video1: {
+          title: 'Giới thiệu Saigontourist',
+          description: 'Tìm hiểu về lịch sử và sứ mệnh của chúng tôi'
+        },
+        video2: {
+          title: 'Dịch vụ của chúng tôi',
+          description: 'Khám phá các dịch vụ du lịch đẳng cấp'
+        },
+        video3: {
+          title: 'Khách hàng nói gì về chúng tôi',
+          description: 'Những trải nghiệm thực tế từ khách hàng'
+        },
+        closing: 'Saigontourist tự hào là đơn vị lữ hành hàng đầu Việt Nam, mang đến những trải nghiệm du lịch độc đáo và dịch vụ chất lượng cao cho khách hàng trong suốt hơn 45 năm qua.'
       }
     },
     tour: {
@@ -482,7 +499,7 @@ export const translations = {
             day3: {
               title: "NGÀY 3: SAPA - FANSIPAN - LÀO CAI",
               meals: "Ăn sáng + trưa + chiều",
-              description: "Đi cáp treo lên đỉnh Fansipan, chinh phục nóc nhà Đông Dương. Chiều thăm khu du lịch Hàm Rồng, vườn lan, vườn hoa Âu. Tối di chuyển đến Lào Cai."
+              description: "Đi cáp treo lên đỉnh Fansipan, chinh phục nóc nhà Đông Dương. Chiều th��m khu du lịch Hàm Rồng, vườn lan, vườn hoa Âu. Tối di chuyển đến Lào Cai."
             },
             day4: {
               title: "NGÀY 4: LÀO CAI - HẠ LONG",
@@ -795,6 +812,7 @@ export const translations = {
       home: 'HOME',
       domesticTours: 'DOMESTIC TOURS',
       about: 'ABOUT',
+      aboutUs: 'ABOUT US',
     },
     header: {
       selectLocation: 'Select Location',
@@ -982,6 +1000,22 @@ export const translations = {
           number: '1900 1808',
           support: '24/7 Support'
         }
+      },
+      videoPage: {
+        title: 'About Us',
+        video1: {
+          title: 'About Saigontourist',
+          description: 'Learn about our history and mission'
+        },
+        video2: {
+          title: 'Our Services',
+          description: 'Discover our high-quality travel offerings'
+        },
+        video3: {
+          title: 'What Our Customers Say',
+          description: 'Real experiences from our customers'
+        },
+        closing: 'Saigontourist is proud to be Vietnam\'s leading travel company, providing unique travel experiences and high-quality service for over 45 years.'
       }
     },
     tour: {

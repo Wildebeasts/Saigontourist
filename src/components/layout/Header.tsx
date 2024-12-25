@@ -4,7 +4,7 @@ import { cn } from "../../lib/utils"
 import { Search } from "lucide-react"
 import logo from "../../assets/logo.png"
 import logoAlt from "../../assets/logo-color-big.png"
-import { Link, useNavigate } from 'react-router-dom'
+import { Link, useNavigate, useLocation } from 'react-router-dom'
 import { useTranslation } from '../../hooks/useTranslation';
 import { LanguageSwitcher } from '../LanguageSwitcher'
 
@@ -17,6 +17,9 @@ export const Header = ({ darkBg = false }: HeaderProps) => {
   const [isScrolled, setIsScrolled] = useState(false)
   const { t } = useTranslation();
   const navigate = useNavigate();
+  const location = useLocation();
+
+  const isAboutUsPage = location.pathname === '/ve-chung-toi';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -33,6 +36,10 @@ export const Header = ({ darkBg = false }: HeaderProps) => {
 
   return (
     <header className="fixed w-full z-50">
+      {isAboutUsPage && !isScrolled && (
+        <div className="absolute inset-0 bg-black/50 h-[140px]"></div>
+      )}
+
       {/* Top bar */}
       <div 
         className={cn(
@@ -68,7 +75,7 @@ export const Header = ({ darkBg = false }: HeaderProps) => {
       {/* Navigation */}
       <nav 
         className={cn(
-          "transition-all duration-300",
+          "transition-all duration-300 relative",
           isScrolled ? "bg-white shadow-md" : "bg-transparent",
           isScrolled ? "transform translate-y-[-45px]" : "transform translate-y-0"
         )}
@@ -134,6 +141,19 @@ export const Header = ({ darkBg = false }: HeaderProps) => {
               )}
             >
               {t('nav.about') as string}
+            </Link>
+            <Link 
+              to="/ve-chung-toi" 
+              className={cn(
+                "transition-colors",
+                isScrolled 
+                  ? "text-gray-800 hover:text-primary-600" 
+                  : darkBg 
+                    ? "text-white hover:text-gray-200"
+                    : "text-gray-800 hover:text-primary-600"
+              )}
+            >
+              {t('nav.aboutUs') as string}
             </Link>
           </div>
 
